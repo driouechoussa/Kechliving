@@ -1,0 +1,142 @@
+@import url(config.css);
+@import url(base.css);
+@import url(auxmarrakech.css);
+
+nav {
+  z-index: 999;
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+nav .user-field div:first-child a {
+  color: var(--gray);
+}
+
+nav .user-field div:last-child a {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.large-btn {
+  background-color: var(--primary-color) !important;
+}
+
+
+.bxs-heart {
+  color: var(--primary-color) !important;
+  font-size: var(--normal_fs);
+}
+
+.social-link {
+  font-size: var(--medium_fs);
+}
+
+.social-link:hover {
+  color: var(--primary-color) !important;
+  transition: 0.4s;
+}
+
+
+
+header .hero {
+  width: 100%;
+  height: 75vh;
+}
+
+header .hero .text-Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+}
+
+.img-wapper {
+   width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.card-img-top {
+  width: 100%;
+  transition: 1s;
+}
+
+.property-card:hover .card-img-top {
+  transform: scale(1.2);
+}
+
+section .cards-cn {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+.btn-info , .btn-contact {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn-info:hover , .btn-contact:hover {
+  background-color: darken(var(--primary-color), 10%);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.property-card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+
+#btnFilter {
+  color: var(--gray);
+  padding: 5px 10px !important;
+  
+}
+
+
+    /* sidebar */
+    #filterSidebar {
+      position: sticky;
+      top: 75px;
+      left: 0;
+      width: 50%;
+      height: 100vh;
+      background-color: #f8f9fa;
+      padding: 20px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    
+    }
+
+
+        body.sidebar-open #filterSidebar {
+      transform: translateX(0);
+    }
+
+    body.sidebar-open #productList {
+      padding-left: 200px;
+    }
+
+    .product-card {
+      padding: 10px;
+    }
+
+
+    .btnFilterSubmit {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }

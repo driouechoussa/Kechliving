@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero img.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+.filter-bar {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+.filter-bar h5 {
+  margin-bottom: 20px;
+}
+
+.filter-apply {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-apply:hover {
+  background-color: darken(var(--primary-color), 10%);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-information {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn-information:hover {
+  background-color: darken(var(--primary-color), 10%);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.property-card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+
+
+.Contact-card {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+}
+
+.btn-Contact {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-Contact:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
