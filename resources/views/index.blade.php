@@ -43,13 +43,12 @@
     <div class="hero p-2">
       <div class="text-Content w-75 mt-5">
         <h1 class="hero-title noto-serif text-light py-5">
-          Refuges de charme : La collection de villas
+          {{__('messages.hero_title')}}
         </h1>
 
         <a draggable="false" target="_blank"
           class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light "
-          href="{{ route('inMarrakechPage') }}">découvrez
-          nos pièces</a>
+          href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
       </div>
       <img class="hero-bg w-100 h-100 rounded " loading="lazy" draggable="false" src="{{ asset('images/bg/heroBg.png') }}"
         alt="her background">
@@ -174,7 +173,7 @@
             <h5 class="card-title text-capitalize">{{$product->product_name}}</h5>
             <p class="card-text text-muted text-capitalize">{{$product->product_location}}</p>
             <h4 class="text-secondary "><span class="text-dark">{{$product->product_price}}</span> <span class="text-dark">MAD</span> <sup>/ par nuit</sup></h4>
-            <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">Plus d'infos</a>
+            <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">{{__('messages.more_info_button')}}</a>
           </div>
         </div>
       </div>

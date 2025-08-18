@@ -12,4 +12,3 @@
    carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
  });
 
-

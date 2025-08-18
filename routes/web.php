@@ -6,6 +6,9 @@ use App\Http\Controllers\InMarrakechController;
 use App\Http\Controllers\ShowProductController;
 use App\Http\Controllers\Contact;
 
+
+Route::get('/{locale}' , [App\http\Controllers\LangController::class , 'LangSwitcher'])->name('langSwitcher');
+
 Route::get('/', [HomeController::class , 'Index'])->name('homepage');
 
 Route::get('/inMarrakech' , [InMarrakechController::class , 'InMarrakech'])->name('inMarrakechPage');
