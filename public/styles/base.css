@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
     user-select: none;
-    font-family: var(--poppins);
 }
 
-
+body {
+    font-family: var(--poppins) !important;
+}
 
 a {
     font-size: var(--small_fs) !important;
@@ -51,4 +52,9 @@ select {
     background-color: var(--primary-color) !important;
     text-align: center;
     color: var(--white);
+}
+
+
+body.arabicLangActived , h1.arabicLangActived  {
+    font-family: var(--cairo) !important;
 }

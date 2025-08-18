@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{session()->get('locale')}}">
 
 <head>
   <!-- Required meta tags -->
@@ -23,6 +23,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+    <!-- Fonts --> <!-- cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
   <!-- icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- css -->
@@ -38,12 +43,13 @@
 </head>
 
 <body>
+  
   <!-- Header -->
   <header class="header" id="header">
   @include('components/navbar')
     <div class="hero p-2">
       <div class="text-Content w-75 mt-5">
-        <h1 class="hero-title noto-serif text-light py-5">
+        <h1 class="hero-title text-light py-5">
           {{__('messages.hero_title')}}
         </h1>
 
@@ -317,7 +323,13 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-    <script src="{{ asset('js/script.js')}}"></script>
+    <script>
+       const localdata = '{{ session()->get('locale') }}';
+       if (localdata === 'ar') {
+        var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
+        var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
+       }
+    </script>
 </body>
 
 </html>
