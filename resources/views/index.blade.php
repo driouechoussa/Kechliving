@@ -3,8 +3,9 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta name="description"
-    content="Explore the best properties for your next staycation, vacation, or business trip. Our platform offers a wide selection of homes, apartments, and hotels to suit your needs.">
+  <meta name="description" content="{{__('messages.description')}}">
+  <meta name="keywords" content="{{__('messages.keywords')}}">
+
   <meta name="author" content="Kechliving">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +34,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>Kechliving - Trouvez votre séjour idéal !</title>
+  <title>{{__('messages.title')}}</title>
 </head>
 
 <body>
@@ -91,10 +92,8 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-12 col-md-10 col-lg-8 col-xl-7">
-          <h3 class="fs-5 mb-2 text-secondary text-center text-uppercase poppins-medium">pourquoi nous choisir</h3>
-          <h2 class="display-5 mb-5 mb-xl-9 text-center poppins-regular text-dark"><span
-              class="text-capitalize">nous</span> sommes toujours disponibles pour vous aider et répondre à toutes vos
-            questions afin que vos vacances soient inoubliables.</h2>
+          <h3 class="fs-5 my-3  text-secondary text-center text-uppercase poppins-medium">{{__('messages.wcu_section_title')}}</h3>
+          <h2 class="display-5 mb-5 mb-xl-9 text-center poppins-regular text-dark">{{__('messages.wcu_section_subtitle')}}</h2>
         </div>
       </div>
     </div>
@@ -108,9 +107,8 @@
                 <div class="card border-0 bg-transparent">
                   <div class="card-body text-center p-5 ">
                     <img draggable="false" class="w-25 mb-3" src="{{ asset('images/icon/shower.svg') }}" alt="shower">
-                    <h4 class="fw-bold mb-4 poppins-medium text-capitalize">service personnalisé</h4>
-                    <p class="mb-4 text-secondary poppins-regular"><span class="text-capitalize">nouse</span> nous
-                      engageons à vous fournir un service personnalisé adapté à vos besoins spécifiques.</p>
+                    <h4 class="fw-bold mb-4 poppins-medium text-capitalize">{{__('messages.wcu_item_01_heading')}}</h4>
+                    <p class="mb-4 text-secondary poppins-regular">{{__('messages.wcu_item_01_subtitle')}}</p>
                   </div>
                 </div>
               </div>
@@ -118,11 +116,8 @@
                 <div class="card border-0 bg-transparent">
                   <div class="card-body text-center p-5">
                     <img draggable="false" class="w-25 mb-3" src="{{ asset('images/icon/like.svg') }}" alt="like">
-                    <h4 class="fw-bold text-capitalize mb-4 poppins-medium">une expertise de confiance</h4>
-                    <p class="mb-4 text-secondary poppins-regular"><span class="text-capitalize">forts</span> de nos
-                      années
-                      d'expérience sur le marché immobilier de luxe, nous apportons des connaissances et une intégrité
-                      inégalées à chaque transaction.</p>
+                    <h4 class="fw-bold text-capitalize mb-4 poppins-medium">{{__('messages.wcu_item_02_heading')}}</h4>
+                    <p class="mb-4 text-secondary poppins-regular">{{__('messages.wcu_item_02_subtitle')}}</p>
                   </div>
                 </div>
               </div>
@@ -130,10 +125,8 @@
                 <div class="card border-0 bg-transparent">
                   <div class="card-body text-center p-5">
                     <img draggable="false" class="w-25 mb-3" src="{{ asset('images/icon/building.svg') }}" alt="building">
-                    <h4 class="fw-bold text-uppercase mb-4 poppins-medium">annonces exclusives</h4>
-                    <p class="mb-4 text-secondary poppins-regular"><span class="text-capitalize">annonces</span>
-                      exclusives
-                      Nous vous proposons une sélection rigoureuse des plus belles propriétés disponibles.</p>
+                    <h4 class="fw-bold text-uppercase mb-4 poppins-medium">{{__('messages.wcu_item_03_heading')}}</h4>
+                    <p class="mb-4 text-secondary poppins-regular">{{__('messages.wcu_item_03_subtitle')}}</p>
                   </div>
                 </div>
               </div>
@@ -148,11 +141,10 @@
   <section class="container my-5"> <!-- Cards View -->
     <div class="content-text w-100 text-center mb-5">
       <h3 class="poppins-medium text-secondary text-uppercase p-2">
-        découvrez nos séjours
+        {{__('messages.prodict_section_title')}}
       </h3>
       <h2 class="poppins-regular text-dark pt-2">
-        <span class="text-capitalize">Une</span> sélection soignée des séjours luxueuses à Marrakech. Chaque villa allie
-        élégance contemporaine et design marocain traditionnel.
+        {{__('messages.prodict_section_subtitle')}}
       </h2>
     </div>
 
