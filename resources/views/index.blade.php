@@ -191,11 +191,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8">
-          <h3 class="fs-5 mb-2 text-secondary text-uppercase poppins-medium">contact</h3>
-          <h2 class="display-5 mb-4 mb-md-5 mb-xl-8 poppins-regular text-dark "><span
-              class="text-capitalize">nous</span> sommes toujours à la recherche de nouveaux clients pour travailler
-            avec eux. s'il vous plaît contactez-nous
-            de l’une des manières suivantes.</h2>
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase poppins-medium">{{__('messages.contact_section_title')}}</h3>
+          <h2 class="display-5 mb-4 mb-md-5 mb-xl-8  text-dark "><span
+              class="">{{__('messages.contact_section_subtitle')}}</h2>
         </div>
       </div>
     </div>
@@ -208,42 +206,42 @@
             <form action="#!">
               <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                 <div class="col-12">
-                  <label for="fullname" class="form-label text-capitalize poppins-regular">nom et prénom <span
+                  <label for="fullname" class="form-label text-capitalize">{{__('messages.contact_name')}} <span
                       class="text-danger">*</span></label>
-                  <input type="text" placeholder="Nom et Prénom" class="form-control poppins-regular" id="fullname"
+                  <input type="text" placeholder="{{__('messages.contact_name_placeholder')}}" class="form-control" id="fullname"
                     name="fullname" value="" required>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
-                  <label for="email" class="form-label text-capitalize poppins-regular">email <span
+                  <label for="email" class="form-label text-capitalize">{{__('messages.contact_email')}} <span
                       class="text-danger">*</span></label>
                   <div class="input-group">
-                    <input type="email" placeholder="Email" class="form-control poppins-regular" id="email" name="email"
+                    <input type="email" placeholder="example@email.com" class="form-control" id="email" name="email"
                       value="" required>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
-                  <label for="phone" class="form-label text-capitalize poppins-regular">numéro de téléphone</label>
+                  <label for="phone" class="form-label text-capitalize ">{{__('messages.contact_phone')}}</label>
                   <div class="input-group">
-                    <input type="tel" placeholder="numéro de téléphone" class="form-control poppins-regular" id="phone"
+                    <input type="tel" placeholder="+212 600 000 000" class="form-control \" id="phone"
                       name="phone" value="">
                   </div>
                 </div>
                 <div class="col-12 mt-4">
-                  <label for="adress" class="form-label text-capitalize poppins-regular">adresse <span
+                  <label for="adress" class="form-label text-capitalize">{{__('messages.contact_adress')}} <span
                       class="text-danger">*</span></label>
-                  <input type="text" class="form-control text-capitalize poppins-regular" placeholder="adresse"
+                  <input type="text" class="form-control text-capitalize" placeholder="{{__('messages.contact_adress_placeholder')}}"
                     id="adress" name="adress" value="" required>
                 </div>
                 <div class="col-12 mt-4">
-                  <label for="message" class="form-label text-capitalize poppins-regular">message <span
+                  <label for="message" class="form-label text-capitalize ">{{__('messages.contact_message')}} <span
                       class="text-danger">*</span></label>
-                  <textarea class="form-control poppins-regular" placeholder="Message" id="message" name="message"
+                  <textarea class="form-control" placeholder="{{__('messages.contact_message_placeholder')}}" id="message" name="message"
                     rows="3" required></textarea>
                 </div>
                 <div class="col-12 mt-4">
                   <div class="d-grid">
-                    <button class="btn btn-lg text-white shadow text-capitalize poppins-regular large-btn"
-                      type="submit">envoyer un message</button>
+                    <button class="btn btn-lg text-white shadow text-capitalize large-btn"
+                      type="submit">{{__('messages.contact_button')}}</button>
                   </div>
                 </div>
               </div>
@@ -259,10 +257,9 @@
                   <img width="50" height="50" draggable="false" src="{{ asset('images/icon/location.svg') }}" alt="location">
                 </div>
                 <div>
-                  <h4 class="mb-2 text-capitalize poppins-medium">location</h4>
-                  <p class="mb-2 poppins-regular">Venez nous rendre visite pour discuter.</p>
+                  <h4 class="mb-2 text-capitalize poppins-medium">{{__('messages.contact_att_location')}}</h4>
                   <hr class="w-50 mb-3 border-dark-subtle">
-                  <address class="m-0 text-secondary poppins-regular">40000 Marrakech, Maroc</address>
+                  <address class="m-0 text-secondary poppins-regular">{{__('messages.adress')}}</address>
                 </div>
               </div>
               <div class="row mb-sm-4 mb-md-5">
@@ -272,8 +269,7 @@
                       <img width="50" height="50" draggable="false" src="{{ asset('images/icon/phone.svg') }}" alt="phone">
                     </div>
                     <div>
-                      <h4 class="mb-2">Téléphone</h4>
-                      <p class="mb-2">Veuillez nous parler directement.</p>
+                      <h4 class="mb-2">{{__('messages.contact_att_phone')}}</h4>
                       <hr class="w-75 mb-3 border-dark-subtle">
                       <p class="mb-0">
                         <a class="link-secondary text-secondary text-decoration-none" href="tel:+15057922430">+212 (661) 234567</a>
@@ -287,8 +283,7 @@
                       <img width="50" height="50" draggable="false" src="{{ asset('images/icon/mail.svg') }}" alt="mail">
                     </div>
                     <div>
-                      <h4 class="mb-2">Email</h4>
-                      <p class="mb-2">Veuillez nous écrire directement.</p>
+                      <h4 class="mb-2">{{__('messages.contact_att_email')}}</h4>
                       <hr class="w-75 mb-3 border-dark-subtle">
                       <p class="mb-0">
                         <a class="link-secondary text-secondary text-decoration-none"
@@ -324,11 +319,14 @@
     crossorigin="anonymous"></script>
 
     <script>
-       const localdata = '{{ session()->get('locale') }}';
+       const localdata = '{{ session()->get('locale')}}';
        if (localdata === 'ar') {
         var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
         var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
        }
+
+      
+      
     </script>
 </body>
 

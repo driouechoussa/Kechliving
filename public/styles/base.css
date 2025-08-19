@@ -54,7 +54,16 @@ select {
     color: var(--white);
 }
 
+.dir-ltr {
+    direction: ltr !important;
+}
+
+.dir-rtl {
+    direction: rtl !important;
+}
 
 body.arabicLangActived , h1.arabicLangActived  {
     font-family: var(--cairo) !important;
+    direction: rtl !important;
 }
+

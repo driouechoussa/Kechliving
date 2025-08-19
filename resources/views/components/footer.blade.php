@@ -11,7 +11,7 @@
               Kechliving
             </h6>
             <p>
-             Merci de votre visite! À bientôt.
+              {{__('messages.footer_message')}}
             </p>
           </div>
           <!-- Grid column -->
@@ -24,10 +24,10 @@
 
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p class="text-capitalize">marrakech 40000 ,Maroc</p>
+            <h6 class="text-uppercase mb-4 font-weight-bold">{{__('messages.contact_section_title')}}</h6>
+            <p class="text-capitalize">{{__('messages.adress')}}</p>
             <p><a class="text-white" href="mailto:info@kechliving.com">info@kechliving.com</a></p>
-            <p><a class="text-white" href="tel:212690886339">+212 (690) 886339</a></p>
+            <p><a class="text-white" href="tel:212690886339">+212(690)886339</a></p>
     
           </div>
         </div>
@@ -37,8 +37,8 @@
       <section class="p-3 pt-0">
         <div class="row d-flex align-items-center">
           <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <div class="p-3">
-              © {{ date('Y') }} Copyright <i class='bx bxs-heart' style='color:#ffffff; font-size:15px;'></i>
+            <div class="p-3 dir-ltr ">
+              © {{ date('Y') }} {{__('messages.copyright')}} <i class='bx bxs-heart' style='color:#ffffff; font-size:15px;'></i>
               <a target="_blank" class="text-white" draggable="false" href="https://www.driouechoussa.com"> @driouechoussa</a>
             </div>
           </div>

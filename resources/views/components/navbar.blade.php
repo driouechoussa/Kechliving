@@ -30,10 +30,10 @@
               <span class="text-capitalize">{{ app()->getLocale() }}</span>
         </button>
         <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item bg-light text-dark text-capitalize" href="{{ route('langSwitcher' , 'en' )}}">en</a>
-          <a class="dropdown-item bg-light text-dark text-capitalize" href="{{ route('langSwitcher' , 'ar' )}}">ar</a>
-          <a class="dropdown-item bg-light text-dark text-capitalize" href="{{ route('langSwitcher' , 'es' )}}">es</a>
-          <a class="dropdown-item bg-light text-dark text-capitalize" href="{{ route('langSwitcher' , 'fr' )}}">fr</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'en' )}}">{{__('messages.en')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'ar' )}}">{{__('messages.ar')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'es' )}}">{{__('messages.es')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'fr' )}}">{{__('messages.fr')}}</a>
         </div>
       </div>
 
