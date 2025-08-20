@@ -27,7 +27,18 @@
 
         <div class="dropdown mx-4 ">
             <button class="btn bg-transparent border none-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="text-capitalize">{{ app()->getLocale() }}</span>
+              <span class="text-capitalize">
+               @if (app()->getLocale() == 'en')
+                {{__('messages.en')}}
+                @elseif (app()->getLocale() == 'ar')
+                  {{__('messages.ar')}}
+                @elseif (app()->getLocale() == 'es')
+                  {{__('messages.es')}}
+                @elseif (app()->getLocale() == 'fr')
+                  {{__('messages.fr')}}
+               @endif
+
+              </span>
         </button>
         <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
           <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'en' )}}">{{__('messages.en')}}</a>
