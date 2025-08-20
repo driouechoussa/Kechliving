@@ -12,6 +12,7 @@
         'contact' => 'contáctanos',
         'in_marrakech' => 'En Marrakech',
         'villas' => 'Villas',
+        'activites' => 'actividades',
 
         // Buttons
         'hero_button' => 'descubre nuestra colección',

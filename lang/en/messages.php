@@ -8,10 +8,11 @@
 
 
         //Navigation
-        'home' => 'Home',
+        'home' => 'home',
         'contact' => 'contact us',
-        'in_marrakech' => 'In Marrakech',
-        'villas' => 'Villas',
+        'in_marrakech' => 'in marrakech',
+        'villas' => 'villas',
+        'activites' => 'activities',
 
         // Buttons
         'hero_button' => 'discover our collection',

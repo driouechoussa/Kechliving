@@ -7,21 +7,25 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item  mx-3">
-            <a  class="nav-link  poppins-regular text-capitalize " href="{{ route('homepage')}}">{{__('messages.home')}}</a>
+            <a  class="nav-link   text-capitalize " href="{{ route('homepage')}}">{{__('messages.home')}}</a>
           </li>
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link  poppins-regular text-capitalize" href="{{ route('inMarrakechPage') }}">{{__('messages.in_marrakech')}}</a>
-          </li>
-
-          <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link  poppins-regular text-capitalize" href="#">{{__('messages.villas')}}</a>
+            <a target="_blank" class="nav-link  text-capitalize" href="{{ route('inMarrakechPage') }}">{{__('messages.in_marrakech')}}</a>
           </li>
 
 
+          <li class="nav-item mx-3">
+            <a target="_blank" class="nav-link   text-capitalize" href="#">{{__('messages.villas')}}</a>
+          </li>
+
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link  poppins-regular linkMover text-capitalize" href="{{ route('contactPage') }}">{{__('messages.contact')}}</a>
+            <a target="_blank" class="nav-link   text-capitalize" href="">{{__('messages.activites')}}</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a target="_blank" class="nav-link  linkMover text-capitalize" href="{{ route('contactPage') }}">{{__('messages.contact')}}</a>
           </li>
         </ul>
 

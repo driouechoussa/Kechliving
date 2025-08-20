@@ -13,6 +13,7 @@
         'contact' => 'اتصل بنا',
         'in_marrakech' => 'في مراكش',
         'villas' => 'الفلل',
+        'activites' => 'أنشطة',
 
 
 
