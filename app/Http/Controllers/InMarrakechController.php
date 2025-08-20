@@ -16,31 +16,6 @@ class InMarrakechController extends Controller
 
         $products_rel = Products::with('firstImage')->get();
 
-        $city_property = [
-            'marrakech' => 'marrakech',
-            'casablanca' => 'casablanca',
-            'rabat' => 'rabat',
-            'fes' => 'fes',
-            'agadir' => 'agadir',
-            'tanger' => 'tanger',
-            'essaouira' => 'essaouira',
-
-        ];
-
-        $type_property = [
-            'villa' => 'villa',
-            'appartement' => 'appartement',
-            'riad' => 'riad',
-            'maison' => 'maison',
-            'terrain' => 'terrain',
-        ];
-
-        $objective_property = [
-            'louer' => 'louer',
-            'acheter' => 'acheter',    
-        ];
-
-       
         return view('inmarrakech' ,
             [
                 'products' => $products,

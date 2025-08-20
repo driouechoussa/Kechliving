@@ -64,6 +64,16 @@
         'copyright' => 'Todos los derechos reservados ',
         'footer_message' => 'Gracias por tu visita, hasta pronto',
 
+        // filter
+        'select' => 'seleccionar',
+        'check-in' => 'entrada',
+        'check-out' => 'salida',
+        'property_type' => 'tipo de propiedad',
+        'property_location' => 'ciudad',
+        'property_cost' => 'precio',
+        'filter_search' => 'buscar',
+
+
 
         //Languages
         'ar' => 'árabe',

@@ -62,12 +62,22 @@
         'copyright' => 'Tous droits réservés ',
         'footer_message' => 'Merci de votre visite, à bientôt',
 
+        // filter
+        'select' => 'sélectionner',
+        'check-in' => 'arrivée',
+        'check-out' => 'départ',
+        'property_type' => 'type de propriété',
+        'property_location' => 'ville',
+        'property_cost' => 'tarification',
+        'filter_search' => 'rechercher',
+
 
         //Languages
         'ar' => 'arabe',
         'en' => 'anglais',
         'fr' => 'français',
         'es' => 'espagnol',
+        
         
 
     ];

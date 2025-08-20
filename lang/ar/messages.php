@@ -22,6 +22,7 @@
         'whtsapp_button' => 'واتساب',
         'more_info_button' => 'المزيد من المعلومات',
         'contact_button' => 'ارسال',
+        'filter_search' => 'بحث',
 
         // headings
         
@@ -73,6 +74,15 @@
         // Footer
         'copyright' => 'جميع الحقوق محفوظة ',
         'footer_message' => '.شكرا لزيارتك , نراك قريبا',
+
+        // filter
+        'select' => 'اختر',
+        'check-in' => 'تاريخ الوصول',
+        'check-out' => 'تاريخ المغادرة',
+        'property_type' => 'نوع الإقامة',
+        'property_location' => 'المدينة',
+        'property_cost' => 'التكلفة',
+        
 
 
         //Languages

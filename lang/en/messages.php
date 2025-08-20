@@ -18,7 +18,8 @@
         'hero_button' => 'discover our collection',
         'whtsapp_button' => 'whatsApp',
         'more_info_button' => 'More info',
-        'contact_button' => 'Send',
+        'contact_button' => 'send',
+        'filter_search' => 'search',
 
         // headings
         'hero_title' => 'Elegant Escapes: A Curated Villa Collection',
@@ -63,6 +64,14 @@
         // Footer
         'copyright' => 'All rights reserved ',
         'footer_message' => 'Thank you for visiting, see you soon',
+
+        // filter
+        'select' => 'select',
+        'check-in' => 'check-in',
+        'check-out' => 'check-out',
+        'property_type' => 'property type',
+        'property_location' => 'city',
+        'property_cost' => 'pricing',
 
 
         //Languages

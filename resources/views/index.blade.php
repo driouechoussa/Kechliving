@@ -60,41 +60,44 @@
       <img class="hero-bg w-100 h-100 rounded " loading="lazy" draggable="false" src="{{ asset('images/bg/heroBg.png') }}"
         alt="her background">
     </div>
+
+    <div class="container-fluid search-form">
+            <form class="row g-3 align-items-center">
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="checkin" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-in')}}</label>
+                    <input type="date" class="form-control none-outline bg-transparent border" id="checkin">
+                </div>
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="checkout" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-out')}}</label>
+                    <input type="date" class="form-control none-outline" id="checkout">
+                </div>
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_type')}}</label>
+                    <select id="type" class="form-select bg-transparent border w-100 none-outline py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                    </select>
+                </div>
+                 <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_location')}}</label>
+                    <select id="type" class="form-select none-outline bg-transparent w-100 border py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                    </select>
+                </div>
+                  <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_cost')}}</label>
+                    <select id="type" class="form-select bg-transparent w-100 border py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end m-auto">
+                    <button type="submit" class="filter-Search btn shadow py-2 rounded my-2  w-100 text-capitalize">{{__('messages.filter_search')}}</button>
+                </div>
+            </form>
+        </div>
   </header>
 
-
-  <section class="py-3 py-md-5">
-    <div class="container">
-      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-        <div class="col-12 col-lg-6 col-xl-5">
-          <img style="width: 300px;" draggable="false" class="img-fluid rounded"
-            src="{{ asset('images/bg/riad_Marrakech.png') }}" alt="About 1">
-        </div>
-        <div class="col-12 col-lg-6 col-xl-7">
-          <div class="row justify-content-xl-center">
-            <div class="col-12 col-xl-11">
-              <h2 class="mb-3"><span class="text-capitalize ">qui </span> sommes nous?</h2>
-              <p class="lead fs-4 text-secondary mb-3 poppins-regular"><span class="text-capitalize">Chez Kechliving,
-                  nous
-                  proposons une gamme complète de services immobiliers pour répondre à vos besoins. Que vous achetiez,
-                  vendiez, louiez ou investissiez, notre équipe de professionnels expérimentés vous accompagne à chaque
-                  étape du processus. Spécialisés dans l'immobilier résidentiel, commercial et locatif, nous vous
-                  offrons des conseils d'experts et un service personnalisé pour vous aider à trouver le bien ou
-                  l'acheteur idéal. Forts d'une connaissance approfondie du marché local, nous nous engageons à offrir
-                  des résultats exceptionnels à nos clients.
-                  Nous sommes une entreprise en pleine croissance, mais nous n'avons jamais perdu de vue nos valeurs
-                  fondamentales. Nous croyons en la collaboration, l'innovation et la satisfaction client. Nous
-                  cherchons constamment à améliorer nos produits et services.</p>
-      
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Service 7 -->
-  <section class="bsb-service-7 py-5 py-xl-8">
+  <section class="bsb-service-7 mt-5 py-5 py-xl-8">
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-12 col-md-10 col-lg-8 col-xl-7">
