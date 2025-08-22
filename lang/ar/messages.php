@@ -82,15 +82,29 @@
         'property_type' => 'نوع الإقامة',
         'property_location' => 'المدينة',
         'property_cost' => 'التكلفة',
-        
+        'greater_than' => 'أكثر من',
+
+  
+        // Property Types
+        'property_types' => [
+            'appartement' => 'شقة',
+            'villa' => 'فيلا',
+            'riad' => 'رياض',
+        ],
 
 
-        //Languages
+        // cities
+        'cities' => [
+            'marrakech' => 'مراكش',
+        ],
+
+
+
+              //Languages
         'ar' => 'العربية',
         'en' => 'الإنجليزية',
         'fr' => 'الفرنسية',
         'es' => 'الإسبانية',
-
 
 
 

@@ -24,12 +24,31 @@ class HomeController extends Controller
         $products = Products::limit(6)->get();
 
         $products_rel = Products::with('firstImage')->get();
+
+        $property_type = [
+            'appartement',
+            'villa' ,
+            'riad',
+        ];
+
+        $cities = [
+            'marrakech',
+        ];
+
+        $costs = [
+            '5000',
+            '10000',
+            '15000',
+        ];
+
         
         return view('index' ,
             [
                 'products' => $products,
                 'defaultCurrency' => $defaultCurrency,
-               
+                'property_type' => $property_type,
+                'cities' => $cities,
+                'costs' => $costs,
             ]
         );
     }

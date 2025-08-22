@@ -75,18 +75,27 @@
                     <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_type')}}</label>
                     <select id="type" class="form-select bg-transparent border w-100 none-outline py-1 px-3">
                         <option selected>{{__('messages.select')}}</option>
+                        @foreach ($property_type as $type)
+                            <option value="{{$type}}">{{ __('messages.property_types.' . $type ) }}</option>
+                        @endforeach
                     </select>
                 </div>
                  <div class="col-md-2 d-flex flex-column  align-items-center">
                     <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_location')}}</label>
                     <select id="type" class="form-select none-outline bg-transparent w-100 border py-1 px-3">
                         <option selected>{{__('messages.select')}}</option>
+                         @foreach ($cities as $city)
+                            <option value="{{$city}}">{{ __('messages.cities.' . $city ) }}</option>
+                        @endforeach
                     </select>
                 </div>
                   <div class="col-md-2 d-flex flex-column  align-items-center">
                     <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_cost')}}</label>
                     <select id="type" class="form-select bg-transparent w-100 border py-1 px-3">
                         <option selected>{{__('messages.select')}}</option>
+                            @foreach ($costs as $cost)
+                              <option value="{{$cost}}"><span>{{__('messages.greater_than')}}</span> {{$cost}} <span>MAD</span></option>
+                            @endforeach
                     </select>
                 </div>
                 <div class="col-md-2 d-flex align-items-end m-auto">

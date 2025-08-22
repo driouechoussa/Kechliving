@@ -72,6 +72,23 @@
         'property_type' => 'property type',
         'property_location' => 'city',
         'property_cost' => 'pricing',
+        'greater_than' => 'Greater than',
+
+  
+        // Property Types
+        'property_types' => [
+            'appartement' => 'Apartment',
+            'villa' => 'Villa',
+            'riad' => 'Riad',
+        ],
+
+
+        // cities
+        'cities' => [
+            'marrakech' => 'Marrakech',
+        ],
+
+
 
 
         //Languages

@@ -72,6 +72,22 @@
         'property_location' => 'ciudad',
         'property_cost' => 'precio',
         'filter_search' => 'buscar',
+        'greater_than' => 'Mayor que',
+
+  
+        // Property Types
+        'property_types' => [
+            'appartement' => 'Apartamento',
+            'villa' => 'Villa',
+            'riad' => 'Riad',
+        ],
+
+
+        // cities
+        'cities' => [
+            'marrakech' => 'Marrakech',
+        ],
+
 
 
 
