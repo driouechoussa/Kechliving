@@ -1,19 +1,23 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\InMarrakechController;
-use App\Http\Controllers\ShowProductController;
-use App\Http\Controllers\Contact;
+use App\http\Controllers\HomeController;
+use App\http\Controllers\ShowProductController;
+use App\http\Controllers\LangController;
+use App\http\Controllers\inMarrakechController;
+use App\http\Controllers\ContactController;
+use App\http\Controllers\VillasController;
 
 
-Route::get('/{locale}' , [App\http\Controllers\LangController::class , 'LangSwitcher'])->name('langSwitcher');
+
+Route::get('/inMarrakech' , [inMarrakechController::class , 'InMarrakech'])->name('inMarrakechPage');
+
+Route::get('/villas' , [VillasController::class , 'Villas'])->name('VillasPage');
+
+Route::get('/contactus' , [ContactController::class , 'ContactUs'])->name('ContactPage');
+
+Route::get('/{locale}' , [LangController::class , 'LangSwitcher'])->name('langSwitcher');
 
 Route::get('/', [HomeController::class , 'Index'])->name('homepage');
-
-Route::get('/inMarrakech' , [InMarrakechController::class , 'InMarrakech'])->name('inMarrakechPage');
-
-Route::get('/contact', [Contact::class , 'Contact'] )->name('contactPage');
-
 
 Route::get('/property/{id}', [ShowProductController::class, 'PropertyShow'])->name('PropertyShow');

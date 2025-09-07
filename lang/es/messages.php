@@ -19,6 +19,7 @@
         'whtsapp_button' => 'whatsApp',
         'more_info_button' => 'Más información',
         'contact_button' => 'Enviar',
+        'not_found_btn'=> 'Volver a la página principal',
 
         // headings
         'hero_title' => 'Escapadas Elegantes: Una Colección de Villas Seleccionadas',
@@ -28,6 +29,8 @@
         'wcu_item_03_heading' => 'anuncios exclusivos',
         'prodict_section_title' => 'Descubre nuestras estancias',
         'contact_section_title' => 'Contáctanos',
+        'message_not_found' => 'No se encontraron productos',
+        'inMarrakech_heading_page'=> 'Nuestras Estancias en Marrakech',
         
 
         // Subtitles
@@ -37,6 +40,10 @@
         'wcu_item_03_subtitle' => 'Ofrecemos una selección cuidadosamente curada de las mejores propiedades disponibles, asegurando que tengas acceso a listados exclusivos que cumplan con tus expectativas',
         'prodict_section_subtitle' => 'Explora nuestra colección exclusiva de villas de lujo en Marrakech, cada una ofreciendo una combinación única de elegancia y confort para una estancia inolvidable.',
         'contact_section_subtitle' => '¿Tienes preguntas o necesitas asistencia? No dudes en contactarnos. Estamos aquí para ayudarte con todo lo que necesites para asegurar una experiencia de viaje cómoda y agradable.',
+        'villas_page_header' => 'Explore nuestra exclusiva colección de villas de lujo , cada una ofreciendo una combinación única de elegancia y confort para una estancia inolvidable.',
+        'not_found_sub' => 'Lo sentimos, no hay resultados que coincidan con tu búsqueda. Intenta ajustar los filtros o vuelve a la página principal.',
+        'inMarrakech_sub_page' => 'Encuentra tu propiedad ideal en el corazón de Marrakech',
+        'cta_contact_sub' => 'Para cualquier pregunta o si necesita ayuda, no dude en contactarnos a través de WhatsApp. Nuestro equipo está aquí para acompañarle en todas sus necesidades inmobiliarias en Marrakech. Ya sea que esté buscando una propiedad, quiera información sobre nuestros servicios o tenga otras consultas, ¡no dude en contactarnos!',
 
         
         // Contact Form

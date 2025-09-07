@@ -1,4 +1,4 @@
-<nav class="navbar shadow navbar-expand-lg navbar-light bg-white px-5 ps-5" id="navBar">
+<nav class="navbar shadow-2 navbar-expand-lg navbar-light bg-white px-5 ps-5" id="navBar">
       <a  class="navbar-brand" href="{{ route('homepage') }}"><img draggable="false" height="50" src="{{ asset('images//logo.svg') }}" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,12 +11,12 @@
           </li>
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link  text-capitalize" href="{{ route('inMarrakechPage') }}">{{__('messages.in_marrakech')}}</a>
+            <a target="_blank" class="nav-link text-capitalize" href="{{ route('inMarrakechPage') }}">{{__('messages.in_marrakech')}}</a>
           </li>
 
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link   text-capitalize" href="#">{{__('messages.villas')}}</a>
+            <a target="_blank" class="nav-link   text-capitalize" href="{{ route('VillasPage') }}">{{__('messages.villas')}}</a>
           </li>
 
 
@@ -25,7 +25,7 @@
           </li>
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link  linkMover text-capitalize" href="{{ route('contactPage') }}">{{__('messages.contact')}}</a>
+            <a target="_blank" class="nav-link  linkMover text-capitalize" href="{{ route('ContactPage') }}">{{__('messages.contact')}}</a>
           </li>
         </ul>
 

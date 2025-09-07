@@ -19,6 +19,7 @@
         'whtsapp_button' => 'whatsApp',
         'more_info_button' => 'Plus d\'infos',
         'contact_button' => 'Envoyer',
+        'not_found_btn' => 'Retour à la page d\'accueil',
 
         // headings
         'hero_title' => 'Évasions Élégantes : Une Collection de Villas Sélectionnées',
@@ -28,6 +29,8 @@
         'wcu_item_03_heading' => 'annonces exclusives',
         'prodict_section_title' => 'Découvrez nos séjours',
         'contact_section_title' => 'Contactez-nous',
+        'message_not_found' => 'Aucun produit trouvé',
+        'inMarrakech_heading_page'=> 'Nos Séjours à Marrakech',
         
 
         // Subtitles
@@ -37,6 +40,14 @@
         'wcu_item_03_subtitle' => 'Nous proposons une sélection soigneusement choisie des meilleures propriétés disponibles, vous assurant un accès à des annonces exclusives qui répondent à vos attentes',
         'prodict_section_subtitle' => 'Explorez notre collection exclusive de villas de luxe à Marrakech, chacune offrant un mélange unique d\'élégance et de confort pour un séjour inoubliable.',
         'contact_section_subtitle' => 'Nous sommes là pour répondre à toutes vos questions et vous aider à planifier votre séjour parfait. N\'hésitez pas à nous contacter pour plus d\'informations ou pour toute demande spéciale.',
+        'villas_page_header' => 'Découvrez notre collection exclusive de villas de luxe, alliant élégance et confort pour un séjour inoubliable.',
+        'not_found_sub' => 'Désolé, aucun résultat ne correspond à votre recherche. Essayez de modifier les filtres ou retournez à la page d\'accueil.',
+        'inMarrakech_sub_page' => 'Trouvez votre bien idéal au cœur de Marrakech',
+        
+        'cta_contact_sub' => 'Pour toute question ou besoin d\'aide, n\'hésitez pas à nous contacter via WhatsApp. Notre équipe est là pour
+            vous accompagner dans tous vos besoins immobiliers à Marrakech. Que vous recherchiez un bien immobilier,
+            souhaitiez des informations sur nos services ou que vous ayez d\'autres questions, n\'hésitez pas à nous
+            contacter!',
 
         
         // Contact Form

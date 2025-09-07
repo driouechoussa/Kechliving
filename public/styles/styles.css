@@ -157,3 +157,14 @@ section .cards-cn {
       background-color: var(--primary-color) !important;
       color: var(--white);
     }
+
+
+    .btn_back_to_home {
+      background-color: var(--primary-color) !important;
+      color: var(--white);
+      transition: 4s;
+    }
+
+    .btn_back_to_home:hover {
+      color: var(--white);
+    }

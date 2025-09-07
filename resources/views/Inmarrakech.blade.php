@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kechliving - à Marrakech</title>
+    <title>Kechliving - {{__('messages.in_marrakech')}}</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  
+      <!-- Fonts  --> <!-- poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Fonts  --> <!-- noto serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-        <!-- favicon -->
-    <link rel="shortcut icon" href="{{ asset('images/icon/favicon.png') }}" type="image/x-icon">
+    <!-- Fonts --> <!-- cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 
-    <!-- Boxicons  -->
-     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- css -->
+  <link rel="stylesheet" href="{{ asset('styles/styles.css') }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/styles.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{{ asset('images/icon/favicon.png') }}" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>kechliving - {{__('messages.villas')}}</title>
 </head>
 
 <body>
@@ -33,10 +45,10 @@
 
     <!-- Hero Section -->
     <section class="hero text-center">
-        <img src="../images/bg/marrakech.jpg" alt="Hero Image" class="hero-image">
+        <img src="{{asset('images/bg/marrakech.jpg')}}" alt="Hero Image" class="hero-image">
         <div class="container hero-content">
-            <h1 class="display-4 fw-bold">Nos Séjours à Marrakech</h1>
-            <p class="lead">Trouvez votre bien idéal au cœur de Marrakech</p>
+            <h1 class="hero-title display-4 py-3 fw-bold">{{__('messages.inMarrakech_heading_page')}}</h1>
+            <p class="lead">{{__('messages.inMarrakech_sub_page')}}</p>
         </div>
     </section>
 
@@ -68,27 +80,24 @@
 </section>
 
     <div class="w-50 border Contact-card  mx-auto my-5 p-4 shadow-lg d-flex flex-column align-items-center">
-        <h2 class="text-center mb-2">
-            Contactez-nous
+        <h2 class="text-center py-3">
+            {{__('messages.contact_section_title')}}
         </h2>
 
-        <p class="text-center mb-2">
-            Pour toute question ou besoin d'aide, n'hésitez pas à nous contacter via WhatsApp. Notre équipe est là pour
-            vous accompagner dans tous vos besoins immobiliers à Marrakech. Que vous recherchiez un bien immobilier,
-            souhaitiez des informations sur nos services ou que vous ayez d'autres questions, n'hésitez pas à nous
-            contacter !
+        <p class="text-center text-secondary mb-2">
+            {{__('messages.cta_contact_sub')}}
         </p>
 
-        
-            <a target="_blank" href="{{ route('contactPage') }}" class="btn btn-Contact">Contactez-nous</a>
+            <a target="_blank" href="https://wa.me/212690886339" class="btn btn-Contact">
+                {{__('messages.contact_section_title')}}
+            </a>
 
     </div>
 
     @include('components.footer')
 
 
-    <!-- Bootstrap JS Bundle (for navbar toggler) -->
-     <script src="{{ asset('js/filter.js') }}"></script>
+   
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -99,6 +108,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+        <script>
+            const localdata = '{{ session()->get('locale')}}';
+            if (localdata === 'ar') {
+            var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
+            var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
+            }
+        </script>
 </body>
 
 </html>
