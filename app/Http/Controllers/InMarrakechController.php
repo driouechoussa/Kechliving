@@ -11,6 +11,8 @@ class inMarrakechController extends Controller
            $products = Products::Paginate(12);
            $products_rel = Products::with('firstImage')->get();
 
+          
+
            
 
             return view('Inmarrakech' ,

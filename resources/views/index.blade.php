@@ -10,12 +10,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="{{__('messages.title')}}" />
+  <meta property="og:description" content="{{__('messages.description')}}" />
+  <meta property="og:image" content="{{ asset('images//logo.svg') }}" />
+  <meta property="og:url" content="https://kechliving.com" />
+
   <!-- Fonts  --> <!-- poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <!-- Fonts  --> <!-- noto serif -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +45,27 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <title>{{__('messages.title')}}</title>
+
+     <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Kechliving",
+          "url": "https://kechliving.com",
+          "logo": "https://kechliving.com/images//logo.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+212-69088339",
+            "contactType": "customer service",
+            "areaServed": "MA",
+            "availableLanguage": ["ar", "fr", "en" , "es"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/p/Kechliving-Marrakech-61578336983831",
+            "https://www.instagram.com/kechliving_marrakech/"
+        ]
+}
+</script>
 </head>
 
 <body>
@@ -58,7 +84,7 @@
           href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
       </div>
       <img class="hero-bg w-100 h-100 rounded " loading="lazy" draggable="false" src="{{ asset('images/bg/heroBg.png') }}"
-        alt="her background">
+        alt="hero background">
     </div>
 
     <div class="container-fluid search-form">
@@ -183,9 +209,25 @@
         @endif
           
           <div class="card-body">
-            <h5 class="card-title text-capitalize">{{$product->product_name}}</h5>
-            <p class="card-text text-muted text-capitalize">{{$product->product_location}}</p>
-            <h4 class="text-secondary "><span class="text-dark">{{$product->product_price}}</span> <span class="text-dark">MAD</span> <sup>/ par nuit</sup></h4>
+            <h5 class="card-title text-capitalize">
+                @if (app()->getLocale() == 'ar')
+                    {{$product->product_name_ar}}
+
+                    @else
+                      {{$product->product_name}}
+                 @endif
+            </h5>
+            <p class="card-text text-muted text-capitalize">
+              @if (app()->getLocale() == 'ar')
+                {{$product->product_location_ar}}
+
+                  @else
+                    {{$product->product_location}}
+                @endif
+            </p>
+            <h4 class="text-secondary">
+              <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}<sup class="text-secondary"> /{{__('products.per_night')}}</sup>
+            </h4>
             <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">{{__('messages.more_info_button')}}</a>
           </div>
         </div>
@@ -339,10 +381,10 @@
         var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
         var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
        }
-
-      
-      
     </script>
+
+ 
+
 </body>
 
 </html>

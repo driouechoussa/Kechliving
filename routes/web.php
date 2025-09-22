@@ -7,8 +7,10 @@ use App\http\Controllers\LangController;
 use App\http\Controllers\inMarrakechController;
 use App\http\Controllers\ContactController;
 use App\http\Controllers\VillasController;
+use App\http\Controllers\ActivitiesController;
 
 
+Route::get('/activities' , [ActivitiesController::class , 'Activities'])->name('ActivitiesPage');
 
 Route::get('/inMarrakech' , [inMarrakechController::class , 'InMarrakech'])->name('inMarrakechPage');
 

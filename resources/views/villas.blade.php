@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="robots" content="index, follow" />
+
       <!-- Fonts  --> <!-- poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +60,9 @@
                   <div class="card-body">
                     <h5 class="card-title text-capitalize">{{$product->product_name}}</h5>
                     <p class="card-text text-muted text-capitalize">{{$product->product_location}}</p>
-                    <h4 class="text-secondary "><span class="text-dark">{{$product->product_price}}</span> <span class="text-dark">MAD</span> <sup>/ par nuit</sup></h4>
+                    <h4 class="text-secondary ">
+                      <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}<sup class="text-secondary"> /{{__('products.per_night')}}</sup>
+                    </h4>
                     <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">{{__('messages.more_info_button')}}</a>
                   </div>
                 </div>

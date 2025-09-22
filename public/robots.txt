@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /images/icon/
+Disallow: /images/bg/
+Disallow: /images/items/activities/
+Allow: /images/items/
+Disallow: /admin/
+

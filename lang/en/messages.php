@@ -12,7 +12,7 @@
         'contact' => 'contact us',
         'in_marrakech' => 'In Marrakech',
         'villas' => 'villas',
-        'activites' => 'activities',
+        'activites' => 'Activities',
 
         // Buttons
         'hero_button' => 'discover our collection',
@@ -32,6 +32,7 @@
         'contact_section_title' => 'Get in touch',
         'message_not_found' => 'No products found',
         'inMarrakech_heading_page'=> 'Our Stays in Marrakech',
+        'activities_heading_page' => 'Discover Your Next Adventure',
         
 
         // Subtitles
@@ -45,6 +46,7 @@
         'not_found_sub' => 'Sorry, no results match your search. Try adjusting the filters or return to the homepage.',
         'inMarrakech_sub_page' => 'Find your ideal property in the heart of Marrakech',
         'cta_contact_sub' => 'For any questions or if you need assistance, feel free to contact us via WhatsApp. Our team is here to support you with all your real estate needs in Marrakech. Whether you are looking for a property, want information about our services, or have other inquiries, don\'t hesitate to reach out!',
+        'activities_heading_sub' => 'Explore a world of unforgettable experiences.',
         
         // Contact Form
         'contact_name' => 'Full Name',
@@ -102,6 +104,11 @@
         'en' => 'english',
         'fr' => 'french',
         'es' => 'spanish',
+
+        
+        //placeholders
+        'activities_search_keywords' => 'Search for climbing or balloon rides...',
+
         
 
     ];

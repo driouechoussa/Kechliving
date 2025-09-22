@@ -1,7 +1,7 @@
 :root {
     /* Colors */
     --primary-color: rgb(221, 171, 160);
-    --secondary-color: #2ecc71;
+    --primary-color-hoverd: rgb(201, 151, 140);
 
     --white: rgb(255, 255, 255);
     --dark: rgb(48, 48, 48);
@@ -9,7 +9,7 @@
     --light-gray: rgb(248, 249, 250);
 
     /* typography and fonts */
-    --poppins: "Poppins", serif;
+    --poppins: "Open Sans", serif;
     --noto-Serif:"Noto Serif", serif;
     --cairo: "Cairo", sans-serif;
 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kechliving - {{__('messages.in_marrakech')}}</title>
 
+    <meta name="robots" content="index, follow" />
+
   
       <!-- Fonts  --> <!-- poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,10 +70,26 @@
                     @endif
 
                           <div class="card-body">
-                              <h5 class="card-title text-capitalize">{{$product->product_name}}</h5>
-                              <p class="card-text text-muted text-capitalize">{{$product->product_location}}</p>
-                              <h4 class="text-secondary "><span class="text-dark">{{$product->product_price}}</span> <span class="text-dark">MAD</span> <sup>/ par nuit</sup></h4>
-                              <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">Plus d'infos</a>
+                              <h5 class="card-title text-capitalize">
+                                @if (app()->getLocale() == 'ar')
+                                    {{$product->product_name_ar}}
+
+                                    @else
+                                        {{$product->product_name}}
+                                @endif
+                              </h5>
+                              <p class="card-text text-muted text-capitalize">
+                                  @if (app()->getLocale() == 'ar')
+                                    {{$product->product_location_ar}}
+
+                                    @else
+                                        {{$product->product_location}}
+                                 @endif
+                              </p>
+                              <h4 class="text-secondary ">
+                                <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}<sup class="text-secondary"> /{{__('products.per_night')}}</sup>
+                            </h4>
+                              <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">{{__('messages.more_info_button')}}</a>
                           </div>
                 </div>
             </div>

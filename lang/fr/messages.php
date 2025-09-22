@@ -12,7 +12,7 @@
         'contact' => 'contactez-nous',
         'in_marrakech' => 'À Marrakech',
         'villas' => 'Villas',
-        'activites' => 'activités',
+        'activites' => 'Activités',
 
         // Buttons
         'hero_button' => 'découvrez notre collection',
@@ -31,6 +31,9 @@
         'contact_section_title' => 'Contactez-nous',
         'message_not_found' => 'Aucun produit trouvé',
         'inMarrakech_heading_page'=> 'Nos Séjours à Marrakech',
+        'activities_heading_page' => 'Découvrez votre prochaine aventure',
+        'activities_heading_sub' => 'Explorez un monde d\'expériences inoubliables.',
+        
         
 
         // Subtitles
@@ -105,6 +108,13 @@
         'en' => 'anglais',
         'fr' => 'français',
         'es' => 'espagnol',
+
+        
+        //placeholders
+        'activities_search_keywords' => 'Recherchez escalade ou balades en montgolfière...',
+
+        
+
         
         
 

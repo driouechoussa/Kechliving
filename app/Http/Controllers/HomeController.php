@@ -14,12 +14,7 @@ class HomeController extends Controller
         // get the price value from Products model
         $price = Products::select('product_price')->get();
 
-     
-        
-
-
-
-
+    
         // Fetch  products from the Products model
         $products = Products::limit(6)->get();
 

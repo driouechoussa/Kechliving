@@ -12,7 +12,7 @@
         'contact' => 'contáctanos',
         'in_marrakech' => 'En Marrakech',
         'villas' => 'Villas',
-        'activites' => 'actividades',
+        'activites' => 'Actividades',
 
         // Buttons
         'hero_button' => 'descubre nuestra colección',
@@ -31,8 +31,8 @@
         'contact_section_title' => 'Contáctanos',
         'message_not_found' => 'No se encontraron productos',
         'inMarrakech_heading_page'=> 'Nuestras Estancias en Marrakech',
+        'activities_heading_page' => 'Descubre tu próxima aventura',
         
-
         // Subtitles
         'wcu_section_subtitle' => 'Estamos comprometidos a hacer que tu viaje sea inolvidable. Nuestras propiedades seleccionadas combinan lujo, confort y ubicaciones privilegiadas, asegurando un servicio confiable y una experiencia que supera tus expectativas.',
         'wcu_item_01_subtitle' => 'Nuestro compromiso es ofrecer un servicio personalizado que satisfaga tus necesidades únicas',
@@ -44,6 +44,7 @@
         'not_found_sub' => 'Lo sentimos, no hay resultados que coincidan con tu búsqueda. Intenta ajustar los filtros o vuelve a la página principal.',
         'inMarrakech_sub_page' => 'Encuentra tu propiedad ideal en el corazón de Marrakech',
         'cta_contact_sub' => 'Para cualquier pregunta o si necesita ayuda, no dude en contactarnos a través de WhatsApp. Nuestro equipo está aquí para acompañarle en todas sus necesidades inmobiliarias en Marrakech. Ya sea que esté buscando una propiedad, quiera información sobre nuestros servicios o tenga otras consultas, ¡no dude en contactarnos!',
+        'activities_heading_sub' => 'Explora un mundo de experiencias inolvidables.',
 
         
         // Contact Form
@@ -103,6 +104,12 @@
         'en' => 'inglés',
         'fr' => 'francés',
         'es' => 'español',
+
+        
+        //placeholders
+        'activities_search_keywords' => 'Busca escalada o paseos en globo...',
+
+        
         
 
     ];

@@ -21,7 +21,7 @@
 
 
           <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link   text-capitalize" href="">{{__('messages.activites')}}</a>
+            <a target="_blank" class="nav-link   text-capitalize" href="{{ route('ActivitiesPage') }}">{{__('messages.activites')}}</a>
           </li>
 
           <li class="nav-item mx-3">
@@ -31,31 +31,31 @@
 
         <div class="dropdown mx-4 ">
             <button class="btn bg-transparent border none-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="text-capitalize">
-               @if (app()->getLocale() == 'en')
-                {{__('messages.en')}}
+              <span class="text-capitalize ">
+                 @if (app()->getLocale() == 'en')
+                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/uk.svg') }}" alt="english"> {{__('messages.en')}}
                 @elseif (app()->getLocale() == 'ar')
-                  {{__('messages.ar')}}
+                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/morocco.svg') }}" alt="arabic"> {{__('messages.ar')}}
                 @elseif (app()->getLocale() == 'es')
-                  {{__('messages.es')}}
+                    <img class="mx-2" width="20" src="{{asset('images/icon/flags/spain.svg') }}" alt="spanish"> {{__('messages.es')}}
                 @elseif (app()->getLocale() == 'fr')
-                  {{__('messages.fr')}}
+                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/france.svg') }}" alt="french">{{__('messages.fr')}}
                @endif
 
               </span>
-        </button>
+            </button>
         <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
-          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'en' )}}">{{__('messages.en')}}</a>
-          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'ar' )}}">{{__('messages.ar')}}</a>
-          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'es' )}}">{{__('messages.es')}}</a>
-          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2" href="{{ route('langSwitcher' , 'fr' )}}">{{__('messages.fr')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2 d-flex flex-row align-items-center" href="{{ route('langSwitcher' , 'en' )}}"><img class="mx-2" width="20" src="{{asset('images/icon/flags/uk.svg') }}" alt="english">{{__('messages.en')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2 d-flex flex-row align-items-center" href="{{ route('langSwitcher' , 'ar' )}}"><img class="mx-2" width="20" src="{{asset('images/icon/flags/morocco.svg') }}" alt="arabic">{{__('messages.ar')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2 d-flex flex-row align-items-center" href="{{ route('langSwitcher' , 'es' )}}"><img class="mx-2" width="20" src="{{asset('images/icon/flags/spain.svg') }}" alt="spanish">{{__('messages.es')}}</a>
+          <a class="langLink dropdown-item bg-light text-dark text-capitalize text-center py-2 d-flex flex-row align-items-center" href="{{ route('langSwitcher' , 'fr' )}}"><img class="mx-2" width="20" src="{{asset('images/icon/flags/france.svg') }}" alt="fremch">{{__('messages.fr')}}</a>
         </div>
       </div>
 
         <div class="row user-field">
           <div class="d-flex align-items-center">
-            <a target="_blank" href="https://wa.me/212690886339" class="btn shadow large-btn text-capitalize d-flex"><img class="mx-2" width="20" height="22"
-                src="{{ asset('images/icon/whatsapp.svg') }}" alt="" srcset=""> <span>{{__('messages.whtsapp_button')}}</span></a>
+            <a target="_blank" href="https://wa.me/212690886339" class="btn large-btn text-capitalize d-flex"><img class="mx-2" width="20" height="22"
+                src="{{ asset('images/icon/whatsapp.svg') }}" alt="whatsapp logo"> <span>{{__('messages.whtsapp_button')}}</span></a>
           </div>
         </div>
     </nav>
