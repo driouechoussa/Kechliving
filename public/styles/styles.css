@@ -1,6 +1,7 @@
 @import url(config.css);
 @import url(base.css);
 @import url(auxmarrakech.css);
+@import url(states.css);
 
 nav {
     z-index: 999;

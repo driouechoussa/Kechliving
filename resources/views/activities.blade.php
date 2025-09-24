@@ -102,8 +102,6 @@
   <!-- Activities Section -->
   <main class="container py-5 mt-4">
     <div class="row g-4" id="activities-container">
-
-      <!-- Card 1: Mountain Climbing -->
       <div class="col-12 col-sm-6 my-4 col-lg-4 activity-card">
         <div class="card">
           <img src="{{asset('images/items/activities/climbing.jpg')}}" class="card-img-top"
@@ -146,8 +144,12 @@
         <div class="card">
           <img src="{{asset('images/items/activities/surfing.jpg')}}" class="card-img-top" alt="A person surfing on a wave">
           <div class="card-body">
-            <h5 class="card-title">Surfing</h5>
-            <p class="card-text">Catch the perfect wave and feel the rush of the ocean. Whether you're a beginner or an expert, our lessons will get you on your board and riding the waves.</p>
+            <h5 class="card-title text-center">
+              {{__('activities.surfing')}}
+            </h5>
+            <p class="card-text text-center">
+              {{__('activities.surfing_sub')}}
+            </p>
           </div>
         </div>
       </div>
@@ -158,9 +160,11 @@
           <img src="{{ asset('images/items/activities/camels.jpg') }}" class="card-img-top"
             alt="Sand dunes at sunset">
           <div class="card-body">
-            <h5 class="card-title">Desert Safari</h5>
-            <p class="card-text">Explore the majestic beauty of the desert with a thrilling safari. Experience dune
-              bashing, camel rides, and stargazing at a desert camp.</p>
+            <h5 class="card-title text-center">{{__('activities.safari')}}</h5>
+            <p class="card-text text-center">
+              {{__('activities.safari_desert_sub')}}
+            </p>
+            
           </div>
         </div>
       </div>
@@ -171,9 +175,12 @@
           <img src="{{ asset('images/items/activities/dishes.jpg') }}" class="card-img-top"
             alt="A person cooking in a kitchen">
           <div class="card-body">
-            <h5 class="card-title">Local Cooking Class</h5>
-            <p class="card-text">Learn to prepare traditional dishes and savor the authentic flavors of the region. A
-              hands-on experience for food lovers.</p>
+            <h5 class="card-title text-center">
+              {{__('activities.cooking')}}
+            </h5>
+            <p class="card-text text-center">
+              {{__('activities.cooking_sub')}}
+            </p>
           </div>
         </div>
       </div>

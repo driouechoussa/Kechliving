@@ -1,0 +1,4 @@
+body.ArabicActived {
+    direction: rtl !important;
+    font-family: var(--cairo) !important;
+}
