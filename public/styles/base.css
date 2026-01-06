@@ -39,25 +39,28 @@ select {
     border-radius: 5px;
 }
 
-.none-outline:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
 
 .pointer {
     cursor: pointer !important;
 }
 
-.primary_btn {
+.primary_button {
     background-color: var(--primary-color) !important;
     text-align: center;
     color: var(--white);
-    transition: 3s;
+    font-size: var(--medium_fs);
+    font-weight: var(--medium);
+    text-transform: capitalize;
+    transition: 2s;
 }
 
-.primary_btn:hover {
+.primary_button:hover {
     color: var(--white);
-    background-color: var(--primary-color-hoverd);
+    background-color: var(--primary-color-hoverd) !important;
+}
+
+.primary_outline:focus {
+    outline: var(--primary-color) !important;
 }
 
 .lh_custom {

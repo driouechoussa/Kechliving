@@ -229,14 +229,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-    <script>
-       const localdata = '{{ session()->get('locale')}}';
-       if (localdata === 'ar') {
-        var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
-        var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
-       }
-    </script>
+  <script src="{{asset('js/script.js')}}"></script>
 
 </body>
 

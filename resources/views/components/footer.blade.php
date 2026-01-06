@@ -27,7 +27,7 @@
             <h6 class="text-uppercase mb-4 font-weight-bold">{{__('messages.contact_section_title')}}</h6>
             <p class="text-capitalize">{{__('messages.adress')}}</p>
             <p><a class="text-white" href="mailto:info@kechliving.com">info@kechliving.com</a></p>
-            <p><a class="text-white" href="tel:212690886339">+212(690)886339</a></p>
+            <p><a class="text-white phonelink" href="tel:212690886339">+212(690)886339</a></p>
     
           </div>
         </div>

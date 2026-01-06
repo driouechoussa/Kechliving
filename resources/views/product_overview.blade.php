@@ -42,7 +42,7 @@
   <link rel="shortcut icon" href="{{ asset('images/icon/favicon.png') }}" type="image/x-icon">
 </head>
 
-<body>
+<body class="">
 <div class="container-fluid h-100">
   @include('components.navbar')
     <div id="carouselExampleControls" class="carousel slide mx-2 mt-2" data-ride="false" data-interval="false">
@@ -111,7 +111,7 @@
                     <input type="time" name="checkout-time" placeholder="xx" class="form-control none-outline bg-transparent border" id="checkout">
                 </div>
                   <div class="col-md-2 d-flex w-100 mt-4 align-items-end m-auto">
-                    <button type="submit" class="btn primary_btn py-2 rounded my-2  w-100 text-capitalize">{{__('products.booking_btn')}}</button>
+                    <button type="submit" class="btn primary_button py-2 rounded my-2  w-100 text-capitalize">{{__('products.booking_btn')}}</button>
                 </div>
              </form>
           </div>
@@ -188,36 +188,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}"></script>
-
-
-    <script>
-       const localdata = '{{ session()->get('locale')}}';
-       if (localdata === 'ar') {
-        var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
-        var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
-       }
-  function initMap() {
-    const location = { lat: 31.6295, lng: -7.9811 }; // إحداثيات مراكش
-    const map = new google.maps.Map(document.getElementById("product_map"), {
-      zoom: 12,
-      center: location,
-    });
-
-    new google.maps.Marker({
-      position: location,
-      map: map,
-      title: "مرحبا بك في مراكش"
-    });
-  }
-
-  window.onload = initMap;
-</script>
-
-
-
-    
+  <script src="{{asset('js/script.js')}}"></script>
   </script>
 </body>
 

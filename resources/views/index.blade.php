@@ -68,7 +68,7 @@
 </script>
 </head>
 
-<body>
+<body class="">
   
   <!-- Header -->
   <header class="header" id="header">
@@ -92,7 +92,7 @@
               @csrf
                 <div class="col-md-2 d-flex flex-column  align-items-center">
                     <label for="checkin" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-in')}}</label>
-                    <input type="date" name="date_checkin" class="form-control none-outline bg-transparent border" id="checkin">
+                    <input type="date" name="date_checkin" class="form-control shadow-none bg-transparent border" id="checkin">
                 </div>
                 <div class="col-md-2 d-flex flex-column  align-items-center">
                     <label for="checkout" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-out')}}</label>
@@ -126,7 +126,7 @@
                     </select>
                 </div>
                 <div class="col-md-2 d-flex align-items-end m-auto">
-                    <button type="submit" class="filter-Search btn shadow py-2 rounded my-2  w-100 text-capitalize">{{__('messages.filter_search')}}</button>
+                    <button type="submit" class="primary_button btn shadow py-2  my-2  w-100 ">{{__('messages.filter_search')}}</button>
                 </div>
             </form>
 
@@ -228,7 +228,7 @@
             <h4 class="text-secondary">
               <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}<sup class="text-secondary"> /{{__('products.per_night')}}</sup>
             </h4>
-            <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn btn-information w-100">{{__('messages.more_info_button')}}</a>
+            <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn primary_button mt-2 w-100">{{__('messages.more_info_button')}}</a>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
                 </div>
                 <div class="col-12 mt-4">
                   <div class="d-grid">
-                    <button class="btn btn-lg text-white shadow text-capitalize large-btn"
+                    <button class="btn primary_button shadow py-3 px-4"
                       type="submit">{{__('messages.contact_button')}}</button>
                   </div>
                 </div>
@@ -374,17 +374,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-    <script>
-       const localdata = '{{ session()->get('locale')}}';
-       if (localdata === 'ar') {
-        var val =  document.getElementsByTagName('body')[0].classList.add('arabicLangActived');
-        var h1 = document.getElementsByClassName('hero-title')[0].classList.add('arabicLangActived');
-       }
-    </script>
-
- 
-
+  <script src="{{asset('js/script.js')}}"></script>
 </body>
 
 </html>

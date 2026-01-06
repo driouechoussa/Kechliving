@@ -30,16 +30,16 @@
         </ul>
 
         <div class="dropdown mx-4 ">
-            <button class="btn bg-transparent border none-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="text-capitalize ">
+            <button class="btn bg-transparent border none-outline dropdown-toggle d-flex flex-row align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text-capitalize mx-1">
                  @if (app()->getLocale() == 'en')
-                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/uk.svg') }}" alt="english"> {{__('messages.en')}}
+                   <span class="d-flex justify-content-center"><img class="mx-2" width="20" src="{{asset('images/icon/flags/uk.svg') }}" alt="english"> {{__('messages.en')}}</span>
                 @elseif (app()->getLocale() == 'ar')
-                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/morocco.svg') }}" alt="arabic"> {{__('messages.ar')}}
+                   <span class="d-flex justify-content-center"><img class="mx-2" width="20" src="{{asset('images/icon/flags/morocco.svg') }}" alt="arabic"> {{__('messages.ar')}}</span>
                 @elseif (app()->getLocale() == 'es')
-                    <img class="mx-2" width="20" src="{{asset('images/icon/flags/spain.svg') }}" alt="spanish"> {{__('messages.es')}}
+                    <span class="d-flex justify-content-center"><img class="mx-2" width="20" src="{{asset('images/icon/flags/spain.svg') }}" alt="spanish"> {{__('messages.es')}}</span>
                 @elseif (app()->getLocale() == 'fr')
-                   <img class="mx-2" width="20" src="{{asset('images/icon/flags/france.svg') }}" alt="french">{{__('messages.fr')}}
+                   <span class="d-flex justify-content-center"><img class="mx-2" width="20" src="{{asset('images/icon/flags/france.svg') }}" alt="french">{{__('messages.fr')}}</span>
                @endif
 
               </span>
@@ -54,7 +54,7 @@
 
         <div class="row user-field">
           <div class="d-flex align-items-center">
-            <a target="_blank" href="https://wa.me/212690886339" class="btn large-btn text-capitalize d-flex"><img class="mx-2" width="20" height="22"
+            <a target="_blank" href="https://wa.me/212690886339" class="btn primary_button d-flex align-items-center "><img class="mx-2" width="20" height="22"
                 src="{{ asset('images/icon/whatsapp.svg') }}" alt="whatsapp logo"> <span>{{__('messages.whtsapp_button')}}</span></a>
           </div>
         </div>

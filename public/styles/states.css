@@ -1,4 +1,4 @@
-body.ArabicActived {
+body.ArabicActived , h1.ArabicActived {
     direction: rtl !important;
     font-family: var(--cairo) !important;
 }
