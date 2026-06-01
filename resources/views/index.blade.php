@@ -73,18 +73,99 @@
   <!-- Header -->
   <header class="header" id="header">
   @include('components/navbar')
-    <div class="hero p-2">
-      <div class="text-Content w-75 mt-5">
-        <h1 class="hero-title text-light py-5">
-          {{__('messages.hero_title')}}
-        </h1>
+    <div class="container-fluid search-form">
+            <form class="row g-3 align-items-center" action="{{ route('VillasPage') }}" method="GET">
+              @csrf
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="checkin" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-in')}}</label>
+                    <input type="date" name="date_checkin" class="form-control shadow-none bg-transparent border" id="checkin">
+                </div>
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="checkout" class="form-label px-2 py-2 text-capitalize">{{__('messages.check-out')}}</label>
+                    <input type="date" name="date_checkout" class="form-control none-outline" id="checkout">
+                </div>
+                <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_type')}}</label>
+                    <select name="property_type" id="type" class="form-select bg-transparent border w-100 none-outline py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                        @foreach ($property_type as $type)
+                            <option value="{{$type}}">{{ __('messages.property_types.' . $type ) }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                 <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_location')}}</label>
+                    <select name="property_location" id="type" class="form-select none-outline bg-transparent w-100 border py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                         @foreach ($cities as $city)
+                            <option value="{{$city}}">{{ __('messages.cities.' . $city ) }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                  <div class="col-md-2 d-flex flex-column  align-items-center">
+                    <label for="type" class="form-label px-2 py-2 text-capitalize">{{__('messages.property_cost')}}</label>
+                    <select name="property_cost" id="type" class="form-select bg-transparent w-100 border py-1 px-3">
+                        <option selected>{{__('messages.select')}}</option>
+                            @foreach ($costs as $cost)
+                              <option value="{{$cost}}"><span>{{__('messages.greater_than')}}</span> {{$cost}} <span>MAD</span></option>
+                            @endforeach
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end m-auto">
+                    <button type="submit" class="primary_button btn shadow py-2  my-2  w-100 ">{{__('messages.filter_search')}}</button>
+                </div>
+            </form>
 
-        <a draggable="false" target="_blank"
-          class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light "
-          href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
+        </div>
+    <div class="hero p-2">
+      <div class="hero-slider">
+        <div class="hero-slide active" style="background-image: url('{{ asset('images/bg/heroBg.png') }}')">
+          <div class="hero-slide-content">
+            <h1 class="hero-title text-light py-5">{{ __('messages.hero_slide_1_title') }}</h1>
+            <p class="hero-subtitle">{{ __('messages.hero_slide_1_subtitle') }}</p>
+            <a draggable="false" target="_blank"
+              class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light"
+              href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: url('{{ asset('images/bg/marrakech.jpg') }}')">
+          <div class="hero-slide-content">
+            <h1 class="hero-title text-light py-5">{{ __('messages.hero_slide_2_title') }}</h1>
+            <p class="hero-subtitle">{{ __('messages.hero_slide_2_subtitle') }}</p>
+            <a draggable="false" target="_blank"
+              class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light"
+              href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: url('{{ asset('images/bg/mr-castels.jpg') }}')">
+          <div class="hero-slide-content">
+            <h1 class="hero-title text-light py-5">{{ __('messages.hero_slide_3_title') }}</h1>
+            <p class="hero-subtitle">{{ __('messages.hero_slide_3_subtitle') }}</p>
+            <a draggable="false" target="_blank"
+              class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light"
+              href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: url('{{ asset('images/bg/sky_marrakech.jpg') }}')">
+          <div class="hero-slide-content">
+            <h1 class="hero-title text-light py-5">{{ __('messages.hero_slide_4_title') }}</h1>
+            <p class="hero-subtitle">{{ __('messages.hero_slide_4_subtitle') }}</p>
+            <a draggable="false" target="_blank"
+              class="hero-btn btn btn-outline-light p-2 d-inline-block rounded text-capitalize text-light"
+              href="{{ route('inMarrakechPage') }}">{{__('messages.hero_button')}}</a>
+          </div>
+        </div>
       </div>
-      <img class="hero-bg w-100 h-100 rounded " loading="lazy" draggable="false" src="{{ asset('images/bg/heroBg.png') }}"
-        alt="hero background">
+
+      <div class="hero-slider-dots">
+        <button type="button" class="hero-slide-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button type="button" class="hero-slide-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button type="button" class="hero-slide-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button type="button" class="hero-slide-dot" data-slide="3" aria-label="Slide 4"></button>
+      </div>
     </div>
 
     <div class="container-fluid search-form">
@@ -226,7 +307,7 @@
                 @endif
             </p>
             <h4 class="text-secondary">
-              <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}<sup class="text-secondary"> /{{__('products.per_night')}}</sup>
+              <span class="text-dark">{{$product->product_price}}</span> <span class="text-dark text-uppercase">{{__('products.currency_mad')}}</span><sup class="text-secondary"> /{{__('products.per_night')}}</sup>
             </h4>
             <a target="_blank" href="{{ route('PropertyShow' , $product->id)}}" class="btn primary_button mt-2 w-100">{{__('messages.more_info_button')}}</a>
           </div>
@@ -249,8 +330,7 @@
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8">
           <h3 class="fs-5 mb-2 text-secondary text-uppercase poppins-medium">{{__('messages.contact_section_title')}}</h3>
-          <h2 class="display-5 mb-4 mb-md-5 mb-xl-8  text-dark "><span
-              class="">{{__('messages.contact_section_subtitle')}}</h2>
+          <h2 class="display-5 mb-4 mb-md-5 mb-xl-8  text-dark ">{{__('messages.contact_section_subtitle')}}</h2>
         </div>
       </div>
     </div>
@@ -279,7 +359,7 @@
                 <div class="col-12 col-md-6 mt-4">
                   <label for="phone" class="form-label text-capitalize ">{{__('messages.contact_phone')}}</label>
                   <div class="input-group">
-                    <input type="tel" placeholder="+212 600 000 000" class="form-control \" id="phone"
+                    <input type="tel" placeholder="+212 600 000 000" class="form-control" id="phone"
                       name="phone" value="">
                   </div>
                 </div>

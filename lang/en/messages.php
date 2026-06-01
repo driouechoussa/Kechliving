@@ -13,6 +13,12 @@
         'in_marrakech' => 'In Marrakech',
         'villas' => 'villas',
         'activites' => 'Activities',
+        'preferences' => 'Preferences',
+        'dark_mode' => 'Dark mode',
+        'language' => 'Language',
+        'currency' => 'Currency',
+        'dark_mode_helper' => 'Choose your preferred theme mode for a better viewing experience.',
+        'currency_helper' => 'Currency values update dynamically based on global exchange rates.',
 
         // Buttons
         'hero_button' => 'discover our collection',
@@ -24,6 +30,14 @@
 
         // headings
         'hero_title' => 'Elegant Escapes: A Curated Villa Collection',
+        'hero_slide_1_title' => 'Elegant Escapes: A Curated Villa Collection',
+        'hero_slide_1_subtitle' => 'Enjoy handpicked villas with private pools and premium concierge services.',
+        'hero_slide_2_title' => 'Your Private Escape in Marrakech',
+        'hero_slide_2_subtitle' => 'Relax in stylish villas close to the city’s best sights and restaurants.',
+        'hero_slide_3_title' => 'Luxury Living, Local Flavor',
+        'hero_slide_3_subtitle' => 'Experience authentic Moroccan hospitality in exclusive properties.',
+        'hero_slide_4_title' => 'Summer Offers: Save on Seaside Luxury',
+        'hero_slide_4_subtitle' => 'Book your summer stay now and enjoy special villa discounts across Marrakech.',
         'wcu_section_title' => 'why choose us?',
         'wcu_item_01_heading' => 'personalized service',
         'wcu_item_02_heading' => 'trusted expertise',

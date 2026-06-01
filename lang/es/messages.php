@@ -13,6 +13,12 @@
         'in_marrakech' => 'En Marrakech',
         'villas' => 'Villas',
         'activites' => 'Actividades',
+        'preferences' => 'Preferencias',
+        'dark_mode' => 'Modo oscuro',
+        'language' => 'Idioma',
+        'currency' => 'Moneda',
+        'dark_mode_helper' => 'Elige tu modo de tema preferido para una mejor experiencia visual.',
+        'currency_helper' => 'Los valores de moneda se actualizan dinámicamente según las tasas de cambio globales.',
 
         // Buttons
         'hero_button' => 'descubre nuestra colección',
@@ -23,6 +29,14 @@
 
         // headings
         'hero_title' => 'Escapadas Elegantes: Una Colección de Villas Seleccionadas',
+        'hero_slide_1_title' => 'Escapadas Elegantes: Una Colección de Villas Seleccionadas',
+        'hero_slide_1_subtitle' => 'Disfruta de villas seleccionadas con piscinas privadas y servicios de primer nivel.',
+        'hero_slide_2_title' => 'Tu escapada privada en Marrakech',
+        'hero_slide_2_subtitle' => 'Relájate en villas con estilo cerca de los mejores sitios y restaurantes.',
+        'hero_slide_3_title' => 'Lujo con sabor local',
+        'hero_slide_3_subtitle' => 'Vive la auténtica hospitalidad marroquí en propiedades exclusivas.',
+        'hero_slide_4_title' => 'Ofertas de verano: Ahorra en lujo',
+        'hero_slide_4_subtitle' => 'Reserva tu estancia de verano ahora y disfruta de descuentos especiales en villas.',
         'wcu_section_title' => '¿por qué elegirnos?',
         'wcu_item_01_heading' => 'servicio personalizado',
         'wcu_item_02_heading' => 'experiencia confiable',

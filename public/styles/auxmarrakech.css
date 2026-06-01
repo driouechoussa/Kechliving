@@ -1,29 +1,97 @@
 .hero {
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero img.hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-slider {
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  transform: scale(1);
   z-index: 1;
 }
-.hero-content {
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.hero-slide-content {
   position: relative;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 10px;
+  max-width: 900px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.hero-slide-content .hero-title {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn {
+  z-index: 2;
+}
+
+.hero-slider-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  z-index: 3;
+}
+
+.hero-slide-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-slide-dot.active {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
 }
 .filter-bar {
   background-color: #f8f9fa;

@@ -1,4 +1,32 @@
-body.ArabicActived , h1.ArabicActived {
+body.ArabicActived,
+body.arabicLangActived {
     direction: rtl !important;
+    font-family: var(--cairo) !important;
+}
+
+body.ArabicActived h1,
+body.ArabicActived h2,
+body.ArabicActived h3,
+body.ArabicActived h4,
+body.ArabicActived h5,
+body.ArabicActived p,
+body.ArabicActived a,
+body.ArabicActived label,
+body.ArabicActived button,
+body.ArabicActived input,
+body.ArabicActived select,
+body.ArabicActived textarea,
+body.arabicLangActived h1,
+body.arabicLangActived h2,
+body.arabicLangActived h3,
+body.arabicLangActived h4,
+body.arabicLangActived h5,
+body.arabicLangActived p,
+body.arabicLangActived a,
+body.arabicLangActived label,
+body.arabicLangActived button,
+body.arabicLangActived input,
+body.arabicLangActived select,
+body.arabicLangActived textarea {
     font-family: var(--cairo) !important;
 }
