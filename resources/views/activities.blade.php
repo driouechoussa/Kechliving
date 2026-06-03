@@ -79,6 +79,18 @@
 </head>
 
 <body>
+  <script>
+    (function(){
+      try{
+        var enabled = localStorage.getItem('kechliving-dark-mode') === 'true';
+        if(enabled){
+          document.documentElement.classList.add('dark-mode');
+          if(document.body){ document.body.classList.add('dark-mode'); }
+          else { document.addEventListener('DOMContentLoaded', function(){ document.body.classList.add('dark-mode'); }); }
+        }
+      }catch(e){}
+    })();
+  </script>
     @include('components.navbar')
   <header class="activities-hero-section mt-5">
      <div class="container search-container">

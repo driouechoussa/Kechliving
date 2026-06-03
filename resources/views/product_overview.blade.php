@@ -43,6 +43,18 @@
 </head>
 
 <body class="">
+  <script>
+    (function(){
+      try{
+        var enabled = localStorage.getItem('kechliving-dark-mode') === 'true';
+        if(enabled){
+          document.documentElement.classList.add('dark-mode');
+          if(document.body){ document.body.classList.add('dark-mode'); }
+          else { document.addEventListener('DOMContentLoaded', function(){ document.body.classList.add('dark-mode'); }); }
+        }
+      }catch(e){}
+    })();
+  </script>
 <div class="container-fluid h-100">
   @include('components.navbar')
     <div id="carouselExampleControls" class="carousel slide mx-2 mt-2" data-ride="false" data-interval="false">

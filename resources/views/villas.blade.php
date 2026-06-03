@@ -38,6 +38,18 @@
   <title>kechliving - {{__('messages.villas')}}</title>
 </head>
 <body class="">
+  <script>
+    (function(){
+      try{
+        var enabled = localStorage.getItem('kechliving-dark-mode') === 'true';
+        if(enabled){
+          document.documentElement.classList.add('dark-mode');
+          if(document.body){ document.body.classList.add('dark-mode'); }
+          else { document.addEventListener('DOMContentLoaded', function(){ document.body.classList.add('dark-mode'); }); }
+        }
+      }catch(e){}
+    })();
+  </script>
     @include('components.navbar')
     <section id="villas" class="py-5 mt-5">
         <div class="container text-center">

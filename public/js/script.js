@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const darkModeStorageKey = 'kechliving-dark-mode';
 
     function applyDarkMode(enabled) {
+        document.documentElement.classList.toggle('dark-mode', enabled);
         document.body.classList.toggle('dark-mode', enabled);
         if (darkModeCheckbox) {
             darkModeCheckbox.checked = enabled;

@@ -69,6 +69,18 @@
 </head>
 
 <body class="">
+  <script>
+    (function(){
+      try{
+        var enabled = localStorage.getItem('kechliving-dark-mode') === 'true';
+        if(enabled){
+          document.documentElement.classList.add('dark-mode');
+          if(document.body){ document.body.classList.add('dark-mode'); }
+          else { document.addEventListener('DOMContentLoaded', function(){ document.body.classList.add('dark-mode'); }); }
+        }
+      }catch(e){}
+    })();
+  </script>
   
   <!-- Header -->
   <header class="header" id="header">
@@ -318,13 +330,7 @@
       
     </div>
   </section>
-
-
   
-
-
-
-
   <section class="py-3 py-md-5 py-xl-8" id="contact"> <!-- contact -->
     <div class="container">
       <div class="row">
