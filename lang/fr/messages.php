@@ -126,8 +126,19 @@
         
         //placeholders
         'activities_search_keywords' => 'Recherchez escalade ou balades en montgolfière...',
-
         
+            // About section
+            'about_section_title' => 'À propos',
+            'about_section_subtitle' => 'Qui nous sommes et ce que nous faisons',
+            'about_section_paragraph' => 'Kechliving met en relation des villas et propriétés soigneusement sélectionnées à Marrakech. Nous combinons connaissance locale et service attentif pour rendre votre séjour simple et inoubliable.',
+            'about_feature_1_title' => 'Propriétés sélectionnées',
+            'about_feature_1_sub' => 'Sélectionnées pour la qualité, l’emplacement et le confort.',
+            'about_feature_2_title' => 'Support local',
+            'about_feature_2_sub' => 'Assistance locale pour assurer des séjours sans accroc.',
+            'about_feature_3_title' => 'Fiable & Sécurisé',
+            'about_feature_3_sub' => 'Réservations transparentes et hôtes fiables.',
+            'about_cta_contact' => 'Contactez-nous',
+            'about_cta_explore' => 'Découvrir les propriétés',
 
         
         

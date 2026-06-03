@@ -122,8 +122,19 @@
         
         //placeholders
         'activities_search_keywords' => 'Busca escalada o paseos en globo...',
-
         
+            // About section
+            'about_section_title' => 'Sobre nosotros',
+            'about_section_subtitle' => 'Quiénes somos y qué hacemos',
+            'about_section_paragraph' => 'Kechliving te conecta con villas y propiedades cuidadosamente seleccionadas en Marrakech. Combinamos conocimiento local con un servicio atento para que tu estancia sea sencilla e inolvidable.',
+            'about_feature_1_title' => 'Propiedades seleccionadas',
+            'about_feature_1_sub' => 'Seleccionadas por su calidad, ubicación y confort.',
+            'about_feature_2_title' => 'Soporte local',
+            'about_feature_2_sub' => 'Asistencia local para asegurar estancias sin inconvenientes.',
+            'about_feature_3_title' => 'Confiable y seguro',
+            'about_feature_3_sub' => 'Reservas transparentes y anfitriones de confianza.',
+            'about_cta_contact' => 'Contáctanos',
+            'about_cta_explore' => 'Explorar propiedades',
         
 
     ];

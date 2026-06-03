@@ -134,6 +134,18 @@
         //placeholders
         'activities_search_keywords' => 'ابحث عن  تسلق  أو  رحلات بالمنطاد...',
         
+        // About section
+        'about_section_title' => 'من نحن',
+        'about_section_subtitle' => 'من نحن وماذا نفعل',
+        'about_section_paragraph' => 'Kechliving يربطك بفلل وعقارات مختارة بعناية في مراكش. نجمع بين المعرفة المحلية والخدمة الدقيقة لجعل إقامتك سهلة ولا تُنسى.',
+        'about_feature_1_title' => 'عقارات مختارة',
+        'about_feature_1_sub' => 'مختارة من حيث الجودة والموقع والراحة.',
+        'about_feature_2_title' => 'دعم محلي',
+        'about_feature_2_sub' => 'مساعدة محلية على الأرض لضمان إقامة سلسة.',
+        'about_feature_3_title' => 'موثوق وآمن',
+        'about_feature_3_sub' => 'حجوزات شفافة ومضيفون موثوقون.',
+        'about_cta_contact' => 'اتصل بنا',
+        'about_cta_explore' => 'استكشف العقارات',
 
 
 

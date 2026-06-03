@@ -122,7 +122,19 @@
         
         //placeholders
         'activities_search_keywords' => 'Search for climbing or balloon rides...',
-
         
+        // About section
+        'about_section_title' => 'About Us',
+        'about_section_subtitle' => 'Who we are & what we do',
+        'about_section_paragraph' => 'Kechliving connects you with carefully selected villas and properties in Marrakech. We combine local knowledge with attentive service to make your stay effortless and unforgettable.',
+        'about_feature_1_title' => 'Handpicked Properties',
+        'about_feature_1_sub' => 'Selected for quality, location and comfort.',
+        'about_feature_2_title' => 'Local Support',
+        'about_feature_2_sub' => 'On-the-ground assistance to ensure smooth stays.',
+        'about_feature_3_title' => 'Trusted & Secure',
+        'about_feature_3_sub' => 'Transparent booking and reliable hosts.',
+        'about_cta_contact' => 'Contact Us',
+        'about_cta_explore' => 'Explore Properties',
+
 
     ];
