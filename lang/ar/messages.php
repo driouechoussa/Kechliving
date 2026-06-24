@@ -18,8 +18,13 @@
         'dark_mode' => 'الوضع الداكن',
         'language' => 'اللغة',
         'currency' => 'العملة',
+        'theme_light' => 'فاتح',
+        'theme_dark' => 'داكن',
+        'theme_system' => 'النظام الافتراضي',
         'dark_mode_helper' => 'اختر وضع السمة المفضل لديك لتحسين تجربة العرض.',
         'currency_helper' => 'تتحدث قيم العملة تلقائيًا وفقًا لتغيرات أسعار الصرف العالمية.',
+        'login_button' => 'تسجيل الدخول',
+        'signup_button' => 'إنشاء حساب',
 
 
 
@@ -126,9 +131,9 @@
 
               //Languages
         'ar' => 'العربية',
-        'en' => 'الإنجليزية',
-        'fr' => 'الفرنسية',
-        'es' => 'الإسبانية',
+        'en' => 'english',
+        'fr' => 'français',
+        'es' => 'español',
 
 
         //placeholders

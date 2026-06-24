@@ -17,8 +17,13 @@
         'dark_mode' => 'Dark mode',
         'language' => 'Language',
         'currency' => 'Currency',
+        'theme_light' => 'Light',
+        'theme_dark' => 'Dark',
+        'theme_system' => 'System default',
         'dark_mode_helper' => 'Choose your preferred theme mode for a better viewing experience.',
         'currency_helper' => 'Currency values update dynamically based on global exchange rates.',
+        'login_button' => 'Log In',
+        'signup_button' => 'Sign Up',
 
         // Buttons
         'hero_button' => 'discover our collection',
@@ -114,10 +119,10 @@
 
 
         //Languages
-        'ar' => 'arabic',
+        'ar' => 'العربية',
         'en' => 'english',
-        'fr' => 'french',
-        'es' => 'spanish',
+        'fr' => 'français',
+        'es' => 'español',
 
         
         //placeholders

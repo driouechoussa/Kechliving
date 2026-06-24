@@ -17,8 +17,13 @@
         'dark_mode' => 'Mode sombre',
         'language' => 'Langue',
         'currency' => 'Devise',
+        'theme_light' => 'Clair',
+        'theme_dark' => 'Sombre',
+        'theme_system' => 'Par défaut du système',
         'dark_mode_helper' => 'Choisissez votre thème préféré pour une meilleure expérience de lecture.',
         'currency_helper' => 'Les valeurs des devises sont mises à jour dynamiquement en fonction des taux de change mondiaux.',
+        'login_button' => 'Se connecter',
+        'signup_button' => 'S’inscrire',
 
         // Buttons
         'hero_button' => 'découvrez notre collection',
@@ -118,10 +123,10 @@
 
 
         //Languages
-        'ar' => 'arabe',
-        'en' => 'anglais',
+        'ar' => 'العربية',
+        'en' => 'english',
         'fr' => 'français',
-        'es' => 'espagnol',
+        'es' => 'español',
 
         
         //placeholders
