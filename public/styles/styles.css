@@ -11,13 +11,162 @@ nav {
     left: 0;
 }
 
-nav .user-field div:first-child a {
-    color: var(--gray);
+#navBar {
+    background-color: transparent !important;
+    transition: background-color 250ms ease, box-shadow 250ms ease, border-color 250ms ease, color 250ms ease;
 }
 
-nav .user-field div:last-child a {
-    background-color: var(--dark);
-    color: var(--white);
+#navBar.navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+#navBar.navbar-transparent .navbar-brand,
+#navBar.navbar-transparent .nav-link,
+#navBar.navbar-transparent .dropdown-toggle {
+    color: rgba(255, 255, 255, 0.96) !important;
+}
+
+#navBar.navbar-transparent .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+#navBar.navbar-transparent .navbar-toggler-icon {
+    filter: invert(1) brightness(1.2);
+}
+
+#navBar.navbar-transparent .secondary_button {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+#navBar.navbar-transparent .secondary_button:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+#navBar.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#navBar.navbar-scrolled .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+#navBar.navbar-scrolled .navbar-toggler-icon {
+    filter: none;
+}
+
+#navBar.navbar-scrolled .navbar-brand,
+#navBar.navbar-scrolled .nav-link,
+#navBar.navbar-scrolled .dropdown-toggle {
+    color: var(--dark) !important;
+}
+
+#navBar.navbar-scrolled .secondary_button {
+    background-color: #ffffff;
+    color: var(--dark);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.city-location-dropdown {
+    position: relative;
+}
+
+.city-location-dropdown .city-dropdown-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0.35rem 0;
+    transition: color 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.city-location-dropdown .city-dropdown-toggle:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 4px;
+}
+
+#navBar.navbar-scrolled .city-location-dropdown .city-dropdown-toggle:focus {
+    outline: 2px solid rgba(20, 20, 20, 0.2);
+}
+
+.city-location-dropdown .city-location-menu {
+    min-width: 220px;
+    max-width: 280px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity 220ms ease, transform 220ms ease, visibility 220ms ease;
+    z-index: 1050;
+}
+
+.city-location-dropdown.show .city-location-menu,
+.city-location-dropdown .city-location-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.city-location-menu .dropdown-item {
+    border-radius: 14px;
+    padding: 0.85rem 1.1rem;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.city-location-menu .city-location-item.active,
+.city-location-menu .dropdown-item:hover {
+    background-color: rgba(255, 214, 0, 0.14);
+    color: var(--primary-color);
+}
+
+.city-location-menu .city-location-item.active {
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .city-location-dropdown .city-location-menu {
+        position: static;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin-top: 0.5rem;
+        max-width: none;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .city-location-menu .dropdown-item {
+        margin-bottom: 0.45rem;
+    }
+}
+
+nav .user-field {
+    justify-content: flex-end;
+}
+
+nav .user-field a {
+    min-width: 130px;
+    white-space: nowrap;
+}
+
+nav .user-field a.btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .large-btn {
@@ -191,13 +340,13 @@ body.sidebar-open #productList {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    margin: -60px auto;
+    margin: 0 auto;
     max-width: 1200px;
     width: 100%;
 }
 
 .dropdown-menu.preferences-menu {
-    width: 50vw;
+    width: 95vw;
     max-width: 720px;
     min-width: 420px;
     border-radius: 12px;
@@ -233,8 +382,7 @@ body.sidebar-open #productList {
 }
 
 .pref-icon {
-    min-width: 80px;
-    max-width: 100px;
+    width: 100%;
     padding: 0.75rem;
     background: #ffffff;
     border-radius: 12px;
@@ -245,8 +393,8 @@ body.sidebar-open #productList {
 .pref-icon:hover,
 .pref-icon.active {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    border-color: rgba(221, 171, 160, 0.35);
+    background: rgba(221, 171, 160, 0.12) !important;
+    border: 1px solid rgba(221, 171, 160, 0.178) !important;
 }
 
 .pref-icon {
@@ -292,7 +440,35 @@ body.sidebar-open #productList {
     border-color: rgba(221, 171, 160, 0.45);
 }
 
-body.dark-mode .currency-option {
+.theme-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.theme-option {
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: #ffffff;
+    color: #212529;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.12s ease, border-color 0.15s ease;
+}
+
+.theme-option:hover {
+    transform: translateY(-2px);
+    background: rgba(221, 171, 160, 0.08);
+}
+
+.theme-option.active {
+    background: rgba(221, 171, 160, 0.18);
+    border-color: rgba(221, 171, 160, 0.45);
+}
+
+body.dark-mode .currency-option,
+body.dark-mode .theme-option {
     background: #27292f;
     border-color: rgba(255,255,255,0.06);
     color: #f3f4f6;
@@ -300,8 +476,7 @@ body.dark-mode .currency-option {
 
 .preferences-content {
     flex: 0 0 80%;
-    max-width: 80%;
-    padding-left: 1rem;
+    width: 80%;
 }
 
 .preferences-panel {
@@ -536,6 +711,14 @@ html[lang="ar"] .preferences-panel-grid .pref-panel-col,
 body.ArabicActived .preferences-panel-grid .pref-panel-col {
     justify-content: flex-end;
     text-align: right;
+}
+
+html[lang="ar"] .currency-option,
+body.ArabicActived .currency-option,
+html[lang="ar"] .theme-option,
+body.ArabicActived .theme-option {
+    text-align: right;
+    flex-direction: row-reverse;
 }
 
 html[lang="ar"] .language-option,

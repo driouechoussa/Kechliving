@@ -11,6 +11,7 @@ a {
     font-size: var(--small_fs) !important;
     font-weight: var(--medium) !important;
     text-decoration: none !important;
+    text-transform: capitalize !important;
 }
 
 h1 {
@@ -44,19 +45,44 @@ select {
     cursor: pointer !important;
 }
 
+.primary_button,
+.secondary_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    font-size: var(--medium_fs);
+    font-weight: var(--medium);
+    text-transform: uppercase !important;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid transparent;
+}
+
 .primary_button {
     background-color: var(--primary-color) !important;
     text-align: center;
     color: var(--white);
-    font-size: var(--medium_fs);
-    font-weight: var(--medium);
-    text-transform: capitalize;
-    transition: 2s;
 }
 
 .primary_button:hover {
     color: var(--white);
     background-color: var(--primary-color-hoverd) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.secondary_button {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--dark);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.secondary_button:hover {
+    background-color: rgba(249, 250, 251, 0.96);
+    color: var(--primary-color);
+    border-color: rgba(56, 189, 248, 0.3);
+    transform: translateY(-1px);
 }
 
 .primary_outline:focus {
