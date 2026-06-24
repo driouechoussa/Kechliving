@@ -1,4 +1,4 @@
-<nav class="navbar shadow-2 navbar-expand-lg navbar-light bg-white px-5 ps-5" id="navBar">
+<nav class="navbar shadow-2 navbar-expand-lg navbar-light px-5 ps-5 navbar-transparent" id="navBar">
       <a  class="navbar-brand" href="{{ route('homepage') }}"><img draggable="false" height="50" src="{{ asset('images//logo.svg') }}" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,8 +10,16 @@
             <a  class="nav-link   text-capitalize " href="{{ route('homepage')}}">{{__('messages.home')}}</a>
           </li>
 
-          <li class="nav-item mx-3">
-            <a target="_blank" class="nav-link text-capitalize" href="{{ route('inMarrakechPage') }}">{{__('messages.in_marrakech')}}</a>
+          <li class="nav-item dropdown mx-3 city-location-dropdown">
+            <button class="nav-link dropdown-toggle d-flex align-items-center text-capitalize city-dropdown-toggle" id="cityLocationDropdown" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="cityLocationMenu">
+              <span class="city-dropdown-label">Marrakech</span>
+            </button>
+            <div class="dropdown-menu city-location-menu shadow-sm" aria-labelledby="cityLocationDropdown" id="cityLocationMenu">
+              <a href="{{ route('inMarrakechPage') }}" class="dropdown-item city-location-item active" data-city="Marrakech">Marrakech</a>
+              <a href="#" class="dropdown-item city-location-item" data-city="Casablanca">Casablanca</a>
+              <a href="#" class="dropdown-item city-location-item" data-city="Rabat">Rabat</a>
+              <a href="#" class="dropdown-item city-location-item" data-city="Agadir">Agadir</a>
+            </div>
           </li>
 
 
@@ -46,29 +54,27 @@
                     </a>
                   </div>
                 </div>
-                <div class="preferences-content pl-3">
+                <div class="preferences-content p-3">
                   <div class="preferences-panel-content active" data-panel="darkmode">
                     <div class="preferences-panel">
-                      <div class="preferences-panel-grid">
-                        
-                        <div class="pref-panel-col">
-                          <h5>{{ __('messages.dark_mode') }}</h5>
-                        </div>
-
-                        <div class="pref-panel-col preference-switch">
-                          <div class="preference-toggle">
-                            <input class="preference-toggle-input" type="checkbox" id="prefDarkMode">
-                            <label class="preference-toggle-label" for="prefDarkMode">
-                              <span class="preference-toggle-ball"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="pref-panel-col preference-info">
-                          <i class="bx bx-info-circle"></i>
-                          <p>{{ __('messages.dark_mode_helper') }}</p>
-                        </div>
-
+                      <h5>{{ __('messages.dark_mode') }}</h5>
+                      <div class="theme-options mt-3">
+                        <button type="button" class="theme-option d-flex align-items-center justify-content-between" data-theme="light">
+                          <span>{{ __('messages.theme_light') }}</span>
+                          <i class="bx bx-sun"></i>
+                        </button>
+                        <button type="button" class="theme-option d-flex align-items-center justify-content-between" data-theme="dark">
+                          <span>{{ __('messages.theme_dark') }}</span>
+                          <i class="bx bx-moon"></i>
+                        </button>
+                        <button type="button" class="theme-option d-flex align-items-center justify-content-between" data-theme="system">
+                          <span>{{ __('messages.theme_system') }}</span>
+                          <i class="bx bx-reset"></i>
+                        </button>
+                      </div>
+                      <div class="preference-info mt-3">
+                        <i class="bx bx-info-circle"></i>
+                        <p>{{ __('messages.dark_mode_helper') }}</p>
                       </div>
                     </div>
                   </div>
@@ -122,9 +128,9 @@
 
 
         <div class="row user-field">
-          <div class="d-flex align-items-center">
-            <a target="_blank" href="https://wa.me/212690886339" class="btn primary_button d-flex align-items-center "><img class="mx-2" width="20" height="22"
-                src="{{ asset('images/icon/whatsapp.svg') }}" alt="whatsapp logo"> <span>{{__('messages.whtsapp_button')}}</span></a>
+          <div class="d-flex align-items-center  flex-wrap">
+            <a href="/login" class="btn secondary_button text-uppercase px-4 mx-2 py-2">{{ __('messages.login_button') }}</a>
+            <a href="/register" class="btn primary_button text-uppercase px-4 py-2">{{ __('messages.signup_button') }}</a>
           </div>
         </div>
     </nav>
